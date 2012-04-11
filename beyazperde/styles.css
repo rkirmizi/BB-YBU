@@ -1,0 +1,64 @@
+@CHARSET "UTF-8";
+
+* {
+	font: Tahoma, Helvetica, sans-serif;
+	margin:0;
+	padding:0;
+	
+	}
+header, article, nav, footer, section, aside {display: block;}
+#container {
+	margin:0 auto;
+	width: 1024px;
+	height: 600px;
+	border: 2px solid #000;
+}
+			
+#leftBar {
+	width:256px;
+	height:600px;
+	float:left;
+	background-color:#C96;
+}
+			
+#cont {
+	height:580px;
+	width:748px;
+	float:left;
+	padding: 10px;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+.buton {
+
+	text-align:center;
+	height:200px;
+	background-color:#C60;
+	}
+
+a {	
+	text-decoration:none;
+	vertical-align:central;
+}
+	
+
+#movie {
+			width:748px;
+			height:150px;
+			float:left;
+			display:block;
+}
+			
+.resim {
+			float:left; 
+			margin:0 auto;
+			width: 100px;
+}
+	
+.icerik {
+	float:left;
+	margin:0 auto;
+	width:auto;
+	height:auto;
+}			
