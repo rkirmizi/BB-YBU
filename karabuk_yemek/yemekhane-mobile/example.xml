@@ -1,0 +1,250 @@
+﻿<maintag>
+	<item>
+		<date>02/04/2012</date>
+		<soup>ETLİ KEŞKEK ÇORBASI</soup>
+		<main>TAS KEBABI</main>
+		<second>PİRİNÇ PİLAVI</second>
+		<extra>SALATA</extra>
+		<calory>955</calory>
+	</item>
+	<item>
+		<date>03/04/2012</date>
+		<soup>EZOGELİN ÇORBASI</soup>
+		<main>HASANPAŞA KÖFTE</main>
+		<second>PİRİNÇ PİLAVI</second>
+		<extra>AYRAN</extra>
+		<calory>953</calory>
+	</item>
+	<item>
+		<date>04/04/2012</date>
+		<soup>ŞEHRİYE ÇORBASI</soup>
+		<main>TAVUK SOTE</main>
+		<second>BULGUR PİLAVI</second>
+		<extra>SALATA</extra>
+		<calory>765</calory>
+	</item>
+	<item>
+		<date>05/04/2012</date>
+		<soup>MERCİMEK ÇORBASI</soup>
+		<main>KURU FASULYE</main>
+		<second>PİRİNÇ PİLAVI</second>
+		<extra>CACIK</extra>
+		<calory>975</calory>
+	</item>
+	<item>
+		<date>06/04/2012</date>
+		<soup>TARHANA ÇORBASI</soup>
+		<main>FIRIN PATATES</main>
+		<second>MAKARNA</second>
+		<extra>KAKAOLU PUDİNG</extra>
+		<calory>915</calory>
+	</item>
+	<item>
+		<date>07/04/2012</date>
+		<soup>BUGÜN</soup>
+		<main>YEMEK</main>
+		<second>HİZMETİ</second>
+		<extra>VERİLMEMEKTEDİR.</extra>
+		<calory>-</calory>
+	</item>
+	<item>
+		<date>08/04/2012</date>
+		<soup>BUGÜN</soup>
+		<main>YEMEK</main>
+		<second>HİZMETİ</second>
+		<extra>VERİLMEMEKTEDİR.</extra>
+		<calory>-</calory>
+	</item>
+	<item>
+		<date>09/04/2012</date>
+		<soup>EZOGELİN ÇORBA</soup>
+		<main>EKŞİLİ KÖFTE</main>
+		<second>MAKARNA</second>
+		<extra>MEYVE</extra>
+		<calory>938</calory>
+	</item>
+	<item>
+		<date>10/04/2012</date>
+		<soup>MERCİMEK ÇORBASI</soup>
+		<main>ETLİ MEVSİM TÜRLÜ</main>
+		<second>BULGUR PİLAVI</second>
+		<extra>TULUMBA TATLISI</extra>
+		<calory>1045</calory>
+	</item>
+	<item>
+		<date>11/04/2012</date>
+		<soup>ŞEHRİYE ÇORBASI</soup>
+		<main>TAVUK DÖNER / P.KIZARTMA</main>
+		<second>PİRİNÇ PİLAVI</second>
+		<extra>AYRAN</extra>
+		<calory>920</calory>
+	</item>
+	<item>
+		<date>12/04/2012</date>
+		<soup>DÜĞÜN ÇORBASI</soup>
+		<main>PATLICAN MUSAKKA</main>
+		<second>PİRİNÇ PİLAVI</second>
+		<extra>KOMPOSTO</extra>
+		<calory>901</calory>
+	</item>
+	<item>
+		<date>13/04/2012</date>
+		<soup>DOMATES ÇORBASI</soup>
+		<main>ŞEHRİYELİ GÜVEÇ</main>
+		<second>KARIŞIK KIZARTMA</second>
+		<extra>YOĞURT</extra>
+		<calory>1480</calory>
+	</item>
+	<item>
+		<date>14/04/2012</date>
+		<soup>BUGÜN</soup>
+		<main>YEMEK</main>
+		<second>HİZMETİ</second>
+		<extra>VERİLMEMEKTEDİR.</extra>
+		<calory>-</calory>
+	</item>
+	<item>
+		<date>15/04/2012</date>
+		<soup>BUGÜN</soup>
+		<main>YEMEK</main>
+		<second>HİZMETİ</second>
+		<extra>VERİLMEMEKTEDİR.</extra>
+		<calory>-</calory>
+	</item>
+	<item>
+		<date>16/04/2012</date>
+		<soup>ŞEHRİYE ÇORBASI</soup>
+		<main>TAVUK HAŞLAMA</main>
+		<second>PİRİNÇ PİLAVI</second>
+		<extra>SALATA</extra>
+		<calory>790</calory>
+	</item>
+	<item>
+		<date>17/04/2012</date>
+		<soup>KEŞKEK ÇORBASI</soup>
+		<main>ETLİ NOHUT</main>
+		<second>ŞEH. PİRİNÇ PİLAVI</second>
+		<extra>CACIK</extra>
+		<calory>910</calory>
+	</item>
+	<item>
+		<date>18/04/2012</date>
+		<soup>EZOGELİN ÇORBA</soup>
+		<main>İZMİR KÖFTE</main>
+		<second>BULGUR PİLAVI</second>
+		<extra>ŞEKERPARE</extra>
+		<calory>1083</calory>
+	</item>
+	<item>
+		<date>19/04/2012</date>
+		<soup>TARHANA ÇORBASI</soup>
+		<main>BİBER DOLMASI</main>
+		<second>MAKARNA</second>
+		<extra>YOĞURT</extra>
+		<calory>898</calory>
+	</item>
+	<item>
+		<date>20/04/2012</date>
+		<soup>MERCİMEK ÇORBASI</soup>
+		<main>BAHÇIVAN KEBAP</main>
+		<second>PİRİNÇ PİLAVI</second>
+		<extra>AYRAN</extra>
+		<calory>985</calory>
+	</item>
+	<item>
+		<date>07/04/2012</date>
+		<soup>BUGÜN</soup>
+		<main>YEMEK</main>
+		<second>HİZMETİ</second>
+		<extra>VERİLMEMEKTEDİR.</extra>
+		<calory>-</calory>
+	</item>
+	<item>
+		<date>08/04/2012</date>
+		<soup>BUGÜN</soup>
+		<main>YEMEK</main>
+		<second>HİZMETİ</second>
+		<extra>VERİLMEMEKTEDİR.</extra>
+		<calory>-</calory>
+	</item>
+	<item>
+		<date>21/04/2012</date>
+		<soup>BUGÜN</soup>
+		<main>YEMEK</main>
+		<second>HİZMETİ</second>
+		<extra>VERİLMEMEKTEDİR.</extra>
+		<calory>-</calory>
+	</item>
+	<item>
+		<date>22/04/2012</date>
+		<soup>BUGÜN</soup>
+		<main>YEMEK</main>
+		<second>HİZMETİ</second>
+		<extra>VERİLMEMEKTEDİR.</extra>
+		<calory>-</calory>
+	</item>
+	<item>
+		<date>23/04/2012</date>
+		<soup>RESMİ TATİL</soup>
+		<main>YEMEK</main>
+		<second>HİZMETİ</second>
+		<extra>VERİLMEMEKTEDİR.</extra>
+		<calory>-</calory>
+	</item>
+	<item>
+		<date>24/04/2012</date>
+		<soup>DÜĞÜN ÇORBASI</soup>
+		<main>Z.Y. BARBUNYA</main>
+		<second>PİRİNÇ PİLAVI</second>
+		<extra>TURŞULU SALATA</extra>
+		<calory>935</calory>
+	</item>
+	<item>
+		<date>25/04/2012</date>
+		<soup>MERCİMEK ÇORBASI</soup>
+		<main>ÇİFTLİK KÖFTE</main>
+		<second>MİĞFÖY BÖREK</second>
+		<extra>KOMPOSTO</extra>
+		<calory>1072</calory>
+	</item>
+	<item>
+		<date>26/04/2012</date>
+		<soup>TARHANA ÇORBASI</soup>
+		<main>KARNIYARIK</main>
+		<second>PİRİNÇ PİLAVI</second>
+		<extra>CACIK</extra>
+		<calory>905</calory>
+	</item>
+	<item>
+		<date>27/04/2012</date>
+		<soup>YAYLA ÇORBASI</soup>
+		<main>TAS KEBABI</main>
+		<second>PİYAZ</second>
+		<extra>MEYVE</extra>
+		<calory>725</calory>
+	</item>
+	<item>
+		<date>28/04/2012</date>
+		<soup>BUGÜN</soup>
+		<main>YEMEK</main>
+		<second>HİZMETİ</second>
+		<extra>VERİLMEMEKTEDİR.</extra>
+		<calory>-</calory>
+	</item>
+	<item>
+		<date>29/04/2012</date>
+		<soup>BUGÜN</soup>
+		<main>YEMEK</main>
+		<second>HİZMETİ</second>
+		<extra>VERİLMEMEKTEDİR.</extra>
+		<calory>-</calory>
+	</item>
+	<item>
+		<date>30/04/2012</date>
+		<soup>ŞEHRİYE ÇORBASI</soup>
+		<main>FIRIN TAVUK</main>
+		<second>PİRİNÇ PİLAVI</second>
+		<extra>AYRAN</extra>
+		<calory>873</calory>
+	</item>
+</maintag>
