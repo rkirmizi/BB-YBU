@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:rim="http://www.blackberry.com/ns/widgets"
+        version="1.0.0.0">
+	<rim:loadingScreen backgroundColor="#000000" />		
+    <name>Namaz Vakitleri</name>
+    <author>Ferhat ATASOY</author>
+    <description>Praying Time Application</description>
+	<author rim:copyright="2012"
+   email="ferhat.atasoy@gmail.com">Yazar</author>
+    <icon src="images/icon.png"/>
+    <content src="index.html"/>
+   
+		<access uri="http://www.namaz.web.tr" subdomains="true">
+		</access>	
+       
+  
+</widget>
