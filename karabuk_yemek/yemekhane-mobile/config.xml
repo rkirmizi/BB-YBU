@@ -8,6 +8,6 @@
  <author rim:copyright="2012"
    email="esonuc@gmail.com">Yazar</author> 
  <icon src="icon.png"/>
- <content src="http://muh.karabuk.edu.tr/bilgisayar/emrullah/bb/index.html"/> 
- <access subdomains="true" uri="*"/>
+ <content src="index.html"/> 
+ <access subdomains="true" uri="http://muh.karabuk.edu.tr"/>
 </widget>

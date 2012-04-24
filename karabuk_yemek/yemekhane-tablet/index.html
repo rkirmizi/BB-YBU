@@ -5,13 +5,13 @@
 		<title>Karabük Üniversitesi Günlük Yemek Listesi</title>
 		<link rel="stylesheet" href="style_bb.css" />
 		
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
 <script>
 
 $(document).ready(function () {
     $.ajax({
         type: "GET",
-        url: "example.xml",
+        url: "http://muh.karabuk.edu.tr/bilgisayar/emrullah/tablet/example.xml",
 		crossDomain: true,
         dataType: "xml",
         success: xmlParser,
