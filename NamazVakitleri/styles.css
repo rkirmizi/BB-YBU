@@ -1,0 +1,13 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+	margin: auto;
+	
+	}
+footer
+{
+	background: black;
+	color: yellow;
+	padding: 20 px;
+	width: 100 px;
+}
