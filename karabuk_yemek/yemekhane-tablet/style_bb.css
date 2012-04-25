@@ -2,7 +2,8 @@
 {
 	margin: 0 auto;
 	width: 100%;
-	background: #fff;
+	background: #ffffff;
+	
 }
 
 #header
@@ -13,7 +14,14 @@
 	margin:auto;
 	text-align:center;
 	background-color:#80ad2e;
-	padding:5px;
+	color: #A1FF07;
+	padding:0px;
+	
+}
+
+body
+{
+	background:black;
 }
 
 #header h1, h2, h3{ margin: 0; }
@@ -23,18 +31,21 @@
 	float: left;
 	width: 100%;
 	background: #333;
+	background:black;
 }
 
 #navigation ul
 {
 	margin: 0;
 	padding: 0;
+	
 }
 
 #navigation ul li
 {
 	list-style-type: none;
 	display: inline;
+	
 }
 
 #navigation li a
@@ -53,6 +64,8 @@
 {
 	float: left;
 	width: 100%;
+	margin:50 px;
+
 }
 
 #content-container2
@@ -60,16 +73,19 @@
 	float: left;
 	width: 100%;
 	background-color:#bbc8d9;
+
+	
 }
 
 #section-navigation
 {
 	float: left;
 	width: 20%;
-	padding: 50px 0;
+	padding: 150px 0;
 	margin: 0 2%;
-	display: inline;
-	text-align:right;	
+ 	display: inline; 
+	text-align:right;
+	min-height: 70px;	
 }
 
 #section-navigation ul
@@ -89,7 +105,7 @@
 {
 	float: left;
 	width: 48%;
-	padding: 20px 0;
+	padding: 120px 0;
 	margin: 0 0 0 2%;
 }
 
@@ -99,7 +115,7 @@
 {
 	float: right;
 	width: 20%;
-	padding: 50px 0;
+	padding: 150px 0;
 	margin: 0 2% 0 0;
 	display: inline;
 	text-align:left;
@@ -112,8 +128,9 @@
 	clear: both;
 	background: #39a3d3;
 	text-align: right;
-	padding: 20px;
+	padding: 10px;
 	height: 1%;
+	
 }
 
 
