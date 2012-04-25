@@ -4,10 +4,25 @@
 	margin: auto;
 	
 	}
-footer
+#footer
 {
+	width: 100 0 px;
 	background: black;
 	color: yellow;
-	padding: 20 px;
-	width: 100 px;
+	padding: 200 px;
+	text-align: center;
+	margin: 0px 442px;
+}
+
+#vakitler
+{
+	font-size:40px; 
+	font-family:Helvetica, sans-serif;
+	font-weight: bold;
+	margin:auto;
+	text-align:center;
+	background-color:#80ad2e;
+	color: #A1FF07;
+	padding:0px;
+	
 }
