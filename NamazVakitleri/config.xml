@@ -2,7 +2,9 @@
 <widget xmlns="http://www.w3.org/ns/widgets"
         xmlns:rim="http://www.blackberry.com/ns/widgets"
         version="1.0.0.0">
-	<rim:loadingScreen backgroundColor="#000000" />		
+	<rim:loadingScreen backgroundColor="#000000">
+		<rim:transitionEffect type="fadeOut" duration="250"  />
+	</rim:loadingScreen>
     <name>Namaz Vakitleri</name>
     <author>Ferhat ATASOY</author>
     <description>Praying Time Application</description>
