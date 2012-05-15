@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+        
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Moodle Mobile Client</title>    
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="jquery.mobile-1.0.1.css" />
+    
+    <link rel="stylesheet" href="css/modleb.css" />
+          
+	<script src="jquery-1.6.4.js"></script>
+    
+	<script src="lib/common.js"></script>
+      
+	<script src="jquery.mobile-1.0.1.js"></script>       
+           
+   </head> 
+
+<body> 
+<!-- Start of first page -->
+<div data-role="page" id="page_moodle">
+
+	<div data-role="header">    
+    	<a id="bcancel" data-icon="delete" data-iconpos="notext"></a>
+        <h1>Moodleb v1.0</h1>            
+        <a id="bcourses" href="course_list.html" data-role="button" data-icon="grid">Derslerim</a>
+	</div><!-- /header -->
+    
+    
+    <div data-role="content">            
+               <div id="site_info">
+               </div>    
+          
+               		
+                <div data-role="collapsible-set">
+                
+                    <div data-role="collapsible" data-collapsed="true">
+                    <h3>Kullanıcı Bilgilerim</h3>
+                     <div class="whiteroundtable">
+                    	<div id="user_info"></div>
+                    	</div>              
+                     </div>
+				</div>
+                
+                <div data-role="collapsible-set">
+                    <div data-role="collapsible" data-collapsed="true">
+                    <h3>Desteklenen Moodle Mobil Çağrıları</h3>
+                     <div class="whiteroundtable">
+                    	<div id="funct_info"></div>
+                    	</div>              
+                     </div>
+				</div>
+                
+                
+                
+                           
+    </div><!-- /content -->
+
+   
+	<div data-role="footer" data-position="fixed">
+		<h4>Karabük Üniversitesi Bilgisayar Mühendisliği</h4>
+	</div><!-- /footer -->
+    
+   <script src="lib/moodle_main.js"></script>  
+</div><!-- /page -->
+
+</body>
+    
+</html>

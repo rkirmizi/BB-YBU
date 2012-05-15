@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Moodle Mobile Client</title>    
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+	<link rel="stylesheet" href="jquery.mobile-1.0.1.css" />
+    
+    <link rel="stylesheet" href="css/modleb.css" />
+          
+	<script src="jquery-1.6.4.js"></script>
+    
+	<script src="lib/common.js"></script>
+      
+	<script src="jquery.mobile-1.0.1.js"></script>   
+           
+   </head> 
+
+<body> 
+<!-- Start of first page -->
+<div data-role="page" id="p_course_list">
+
+	<div data-role="header">    
+    	 <a href="moodle.html" id="bback" data-icon="arrow-l"><span data-lang="back">Geri</span></a>
+        <h1>Derslerim</h1>                    
+	</div><!-- /header -->
+    
+    
+    <div data-role="content">            
+        <ul data-role="listview" id="lmycourses">            
+        </ul>           
+                           
+    </div><!-- /content -->
+
+   
+	<div data-role="footer" data-position="fixed">
+		<h4>Karabük Üniversitesi Bilgisayar Mühendisliği</h4>
+	</div><!-- /footer -->
+    
+ <script src="lib/course_list.js"></script> 
+</div><!-- /page -->
+
+</body>
+    
+</html>
