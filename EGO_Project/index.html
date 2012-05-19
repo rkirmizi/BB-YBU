@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Yildirim Beyazit University Ankara EGO Otobüs Hatları Bilgilendirme Sistemi</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	</head>
+	
+	
+	<body> 
+
+<div data-role="page" id="home">
+
+	<div data-role="header" data-theme="d" data-position="fixed">
+		<!--<div class=custom_header">-->
+			<h1>Ankara EGO Otobüs Hatları <br>
+			    Bilgilendirme Sistemine Hoşgeldiniz</h1>
+			<a href="#home"> Ana Sayfa </a>
+		<!--</div>-->
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	
+	<p></p>
+	
+	<a href="#hatarama" data-role="button">Hat Arama</a>
+	<a href="" data-role="button">Adres ile Arama</a>
+	<a href="" data-role="button">Yer Adı ile Arama</a>
+	<a href="" data-role="button">Önemli Yerler</a>
+	
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d" data-position="fixed">
+	
+		<div data-role="navbar">
+						<a href="#hatlar" data-role="button">Tüm Hatlar</a>
+						<a href="#onemliYerler" data-role="button">Duyurular</a>
+					</div><!--navigation bar -->
+					
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="hatarama">
+
+	<div data-role="header" data-theme="d" data-position="fixed">
+		<!--<div class=custom_header">-->
+			<a href="#home"> Home Page </a>
+			<h1>Ankara EGO Otobüsleri Hat Arama</h1>
+		<!--</div>-->
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	
+
+	
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d" data-position="fixed">
+		<h1>Ankara EGO</h1>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="nowshowing">
+
+	<div data-role="header" data-theme="d" data-position="fixed">
+		<!--<div class=custom_header">-->
+		    <a href="#home"> Home Page </a>
+			<h1>Upcoming Cinema List</h1>
+		<!--</div>-->
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	
+	<ul data-role="listview" id="cinemasul"> </ul>
+	
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d" data-position="fixed">
+		<h1>My Footer</h1>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+
+
+	</body>
+	
+</html>
