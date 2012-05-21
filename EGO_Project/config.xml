@@ -10,5 +10,7 @@
    email="ybu-blackberry@googlegroups.com">YBU TEAM</author> 
  <icon src="images/icon.png"/>
  <content src="index.html"/> 
- <access subdomains="true" uri="http://code.jquery.com"/>
+ <access subdomains="true" uri="http://code.jquery.com">
+    <feature id="blackberry.app.event" required="true" version="1.0.0"/>
+ </access>
 </widget>
