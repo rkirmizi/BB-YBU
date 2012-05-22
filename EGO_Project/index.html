@@ -29,12 +29,12 @@
 	<p></p>
 	
 
-	<a href="#hatarama" data-role="button" data-theme="b">Hat Arama</a>
-	<a href="#adresarama" data-role="button" data-theme="b">Adres ile Arama</a>
+	<a href="#hatarama" data-role="button" data-theme="b" data-transition="slide">Hat Arama</a>
+	<a href="#adresarama" data-role="button" data-theme="b" data-transition="slide">Adres ile Arama</a>
 	<!-- <a href="#yerilearama" data-role="button" data-theme="b">Yer Adı ile Arama</a>-->
-	<a href="#onemliyerler" data-role="button" data-theme="b">Önemli Yerler</a>
-	<a href="#nasilgiderim" data-role="button" data-theme="b">Hangi otobüs ile gitmeliyim? </a>
-	<a href="#neredeyim" data-role="button" data-theme="b">Neredeyim?</a>
+	<a href="#onemliyerler" data-role="button" data-theme="b" data-transition="slide">Önemli Yerler</a>
+	<a href="#nasilgiderim" data-role="button" data-theme="b" data-transition="slide">Nasıl giderim? </a>
+	<a href="#neredeyim" data-role="button" data-theme="b" data-transition="slide">Neredeyim?</a>
 	
 	</div><!-- /content -->
 	
@@ -147,16 +147,25 @@
 		<ul data-role="listview" data-split-theme="e" id="onemliyerlerul"> 
 			<li>
 				<img src='images/metro.jpg'/>
-				<h1> <a href="" > Metro </a> </h1>
+				<h1> <a href="" data-transition="slide"> Merkezi Yer </a> </h1>
 				<p> Metro duraklarına nasıl ulaşabilirim. </p>
-				<!--<a href=""> deneme </a>-->
+					<ul>
+						<li><a href=""> Aşti(Otogar)</a></li>
+						<li><a href=""> TCDD</a></li>
+						<li><a href=""> Metro</a></li>
+					</ul>
 			</li>
 			
 			<li>
 				<img src='images/ankaray.jpg'/>
-				<h1> <a href="" > Metro 2 </a> </h1>
+				<h1> <a href="" data-transition="slide" > Ulaşım </a> </h1>
 				<p> Ankaray duraklarına nasıl ulaşabilirim. </p>
 				<!--<a href=""> deneme </a>-->
+					<ul>
+						<li><a href=""> Kızılay </a></li>
+						<li><a href=""> Sıhhiye </a></li>
+						<li><a href=""> Ulus </a></li>
+					</ul>
 			</li>
 
 		</ul>
