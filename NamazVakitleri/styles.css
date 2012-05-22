@@ -1,0 +1,30 @@
+﻿* {
+	margin: 0;
+	padding: 0;
+	margin: auto;
+	
+	
+	}
+#footer
+{
+	width: 100 0 px;
+	background: black;
+	color: yellow;
+	padding: 200 px;
+	text-align: center;
+	margin: 0px 442px;
+}
+
+* td
+{
+	font-size:40px;
+}
+
+select option
+{
+	font-size:35px;
+}
+body
+{
+	background-color:black;
+}

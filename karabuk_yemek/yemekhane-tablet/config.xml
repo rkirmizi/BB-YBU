@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+  xmlns:rim="http://www.blackberry.com/ns/widgets"
+   version="1.0.0.0"> 
+
+ <name>KBU Yemekhane</name> 
+ 
+   <description>KBU Yemek Listesi</description>
+  <rim:orientation mode="auto"/>
+  <rim:loadingScreen backgroundColor="#ffffff">
+					 <!-- backgroundImage="background.png"
+                     foregroundImage="foreground.gif"
+                     onLocalPageLoad="true" -->
+  <rim:transitionEffect type="zoomIn"/>
+  </rim:loadingScreen>
+ <author rim:copyright="2012"
+   email="esonuc@gmail.com">Developer</author> 
+ <icon src="icon.png"/>
+ <content src="index.html"/> 
+ <access subdomains="true" uri="http://muh.karabuk.edu.tr"/>
+</widget>

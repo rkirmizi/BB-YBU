@@ -1,0 +1,192 @@
+﻿<!doctype html>
+<html lang="tr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Karabük Üniversitesi Günlük Yemek Listesi</title>
+		<link rel="stylesheet" href="style_bb.css" />
+		
+<script type="text/javascript" src="jquery.min.js"></script>
+<script>
+
+$(document).ready(function () {
+    $.ajax({
+        type: "GET",
+        url: "http://muh.karabuk.edu.tr/bilgisayar/emrullah/tablet/example.xml",
+		crossDomain: true,
+        dataType: "xml",
+        success: xmlParser,
+		error: function(){                          
+        alert('Error loading XML document'); 
+        }
+    });
+});
+
+	var d = new Date();
+	
+	var month = d.getMonth()+1;
+	var day = d.getDate();
+	var thisDay = d.getDay();
+	//alert(thisDay);
+	
+	var output = ((''+day).length<2 ? '0' : '') + day + '/' +
+				((''+month).length<2 ? '0' : '') + month + '/' +
+					d.getFullYear();
+	function get_dayofweek(today)
+	{
+		switch(today)
+		{
+			case 0: return 'Pazar'; break;
+			case 1: return 'Pazartesi'; break;
+			case 2: return 'Salı'; break;
+			case 3: return 'Çarşamba'; break;
+			case 4: return 'Perşembe'; break;
+			case 5: return 'Cuma'; break;
+			case 6: return 'Cumartesi'; break;
+			case 7: return 'Pazar'; break;
+		}
+	}
+		
+
+function xmlParser(xml) {
+	
+	
+    $('#load').fadeOut();
+
+    $(xml).find("item").each(function () {
+
+		var showDateTxt = $(this).find('date').text();
+		//var headline = $(".main").append($(this).find("soup").text());
+	
+		
+		if (showDateTxt == output)
+		{
+       $("#content").append('<div class="book"><div class="title">' + $(this).find("date").text() + ' ' + get_dayofweek(thisDay) + '</div><div class="description">' + $(this).find("soup").text() + '</div><div class="description">' + $(this).find("main").text() + '</div><div class="description">' + $(this).find("second").text() + '</div><div class="description">' + $(this).find("extra").text() + '</div><div class="date">Toplam Kalori: ' + $(this).find("calory").text() + '</div></div>');
+        $(".book").fadeIn(1000);
+		}
+
+
+    });
+
+
+}
+</script>
+
+
+<script>
+
+var control = 0;
+
+function go(reqday){
+
+$(document).ready(function () {
+    $.ajax({
+        type: "GET",
+        url: "example.xml",
+		crossDomain: true,
+        dataType: "xml",
+        success: xmlParser2,
+		error: function(){                          
+        alert('Error loading XML document'); 
+        }
+    });
+});
+	if(reqday == -1)
+	d.setDate(d.getDate()-1);
+	else if(reqday == 1)
+	d.setDate(d.getDate()+1);
+	
+	var month = d.getMonth()+1;
+	var day = d.getDate();
+	var thisDay = d.getDay();
+	//alert(thisDay);
+	
+	var output = ((''+day).length<2 ? '0' : '') + day + '/' +
+				((''+month).length<2 ? '0' : '') + month + '/' +
+					d.getFullYear();
+	function get_dayofweek(today)
+	{
+		switch(today)
+		{
+			case 0: return 'Pazar'; break;
+			case 1: return 'Pazartesi'; break;
+			case 2: return 'Salı'; break;
+			case 3: return 'Çarşamba'; break;
+			case 4: return 'Perşembe'; break;
+			case 5: return 'Cuma'; break;
+			case 6: return 'Cumartesi'; break;
+			case 7: return 'Pazar'; break;
+		}
+	}
+		
+
+function xmlParser2(xml) {
+	
+	
+    $('.loader').fadeOut();
+
+    $(xml).find("item").each(function () {
+
+		var showDateTxt = $(this).find('date').text();
+		//var headline = $(".main").append($(this).find("soup").text());
+	
+		//output = '19/04/2012';
+		
+		if (showDateTxt == output)
+		{		
+       $("#content").html('<div class="book"><div class="title">' + $(this).find("date").text() + ' ' + get_dayofweek(thisDay) + '</div><div class="description">' + $(this).find("soup").text() + '</div><div class="description">' + $(this).find("main").text() + '</div><div class="description">' + $(this).find("second").text() + '</div><div class="description">' + $(this).find("extra").text() + '</div><div class="date">Toplam Kalori: ' + $(this).find("calory").text() + '</div></div>');
+        $(".book").fadeIn(1000);		
+		control = 1;
+		}	
+		
+    });
+		
+		if (control<1)
+		{
+		$("#content").html('<div class="book"><div class="title">' + output + ' ' + get_dayofweek(thisDay) + '</div><div class="description"> <small>???</small> </div><div class="description"> <small>???</small> </div><div class="description"> <small>???</small> </div><div class="description"> <small>???</small> </div><div class="date"><small> Toplam Kalori: ??? </small></div></div>');
+        $(".book").fadeIn(1000);		
+		}
+		control = 0;
+		
+		
+}
+
+
+}
+</script>
+
+
+	</head>
+	<body>
+
+	<div id="container">
+	<div id="header">
+		<h2>
+			KBÜ Günlük Yemek Listesi 
+		</h2>
+	</div>
+	<div id="content-container1">
+		<div id="content-container2">
+			<div id="section-navigation">
+				<p>
+				<a href="#yesterday" onclick="go(-1);"><img src="arrow_alt_left.png"></a>
+				</p>
+			</div>
+			<div id="content">
+			
+				<div align="center" class="loader"><img src="loader.gif" id="load" width="16" height="11" align="absmiddle"/></div>		
+				
+			</div>
+			<div id="aside">
+				
+				<p>
+				<a href="#tomorrow" onclick="go(1);"><img src="arrow_alt_right.png"></a>
+				</p>
+			</div>
+			<div id="footer">
+				Copyright © <a href="#" onclick="alert('HAKKINDA \n\nArş.Gör. Emrullah SONUÇ ve Arş.Gör. Ferhat ATASOY tarafından geliştirilmiştir. \n');">KBÜ Bilgisayar Mühendisliği</a>, 2012
+			</div>
+		</div>
+	</div>
+</div>
+	</body>
+</html>
