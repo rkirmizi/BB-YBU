@@ -3,10 +3,19 @@
 	<head> 
 	<title>Yildirim Beyazit University Ankara EGO Otobüs Hatları Bilgilendirme Sistemi</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
-	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+	<script>
+	$(document).bind("mobileinit", function() {
+      $.mobile.page.prototype.options.addBackBtn = true;
+	  $.mobile.page.prototype.options.backBtnText="Geri";
+		});    
+	</script>
+	
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	
+	
 	</head>
 	
 	
@@ -133,7 +142,7 @@
 
 </div><!-- /page -->
 
-<div data-role="page" id="onemliyerler">
+<div data-role="page" data-add-back-btn="true" id="onemliyerler">
 
 	<div data-role="header" data-theme="d" data-position="fixed">
 		<!--<div class=custom_header">-->
@@ -144,7 +153,7 @@
 
 	<div data-role="content">	
 	
-		<ul data-role="listview" data-split-theme="e" id="onemliyerlerul"> 
+		<ul data-role="listview" data-split-theme="e" data-add-back-btn="true" id="onemliyerlerul"> 
 			<li>
 				<img src='images/metro.jpg'/>
 				<h1> <a href="" data-transition="slide"> Merkezi Yer </a> </h1>
