@@ -1,21 +1,22 @@
 ﻿-------------------------------------------------------------------------------------------
 YBU Ekibi Projesi
 -------------------------------------------------------------------------------------------
-Proje Adı: Sinema Rehberi
+Proje Adı: Ankara EGO Otobüs Hatları Bilgilendirme Sistemi
 -------------------------------------------------------------------------------------------
 Proje Kapsamı: 
 Blackberry Playbook ve Smartphone üzerinde çalıştırılacak bir uygulama yapılması.
 -------------------------------------------------------------------------------------------
 Proje Amacı: 
-Ön tanımlı sinemaların uzaklık ve vizyon bilgilerine hızlı şekilde iletişim sağlanabilmesi.
+Geolocation ile konum ve adres bilgileri alındığı mobil Ankara EGO Otobüs hatları
+bilgilendirme uygulaması geliştirmek.
 -------------------------------------------------------------------------------------------
 Proje Ekibi: 
-Aydın Eresen, 
-Sinan Yiğit, 
-Çağrı Aslan, 
-Alparslan Akyıldız, 
+Aydın Eresen,
 Hatice Gökçe Bilgiç
--------------------------------------------------------------------------------------------
+Çağrı Aslan,
+Sinan Yiğit,  
+Alparslan Akyıldız, 
+------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------
 
 ###########################################################################################
