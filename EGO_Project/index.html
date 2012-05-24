@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Yildirim Beyazit University Ankara EGO Otobüs Hatları Bilgilendirme Sistemi</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+	<script>
+	$(document).bind("mobileinit", function() {
+      $.mobile.page.prototype.options.addBackBtn = true;
+	  $.mobile.page.prototype.options.backBtnText="Geri";
+		});    
+	</script>
+	
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	
+	
+	</head>
+	
+	
+	<body> 
+
+<div data-role="page" id="home">
+
+	<div data-role="header" data-theme="c" data-position="fixed">
+		<!--<div class=custom_header">-->
+		    
+			<h1><img src='images/icon.png' align="center"/><br>
+			Ankara EGO Otobüs Hatları <br>
+			    Bilgilendirme Sistemine Hoşgeldiniz</h1>
+			<a href="#home"> Ana Sayfa </a>
+		<!--</div>-->
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="c">	
+	
+	<p></p>
+	
+
+	<a href="#hatarama" data-role="button" data-theme="b" data-transition="slide">Hat Arama</a>
+	<a href="#adresarama" data-role="button" data-theme="b" data-transition="slide">Adres ile Arama</a>
+	<!-- <a href="#yerilearama" data-role="button" data-theme="b">Yer Adı ile Arama</a>-->
+	<a href="#onemliyerler" data-role="button" data-theme="b" data-transition="slide">Önemli Yerler</a>
+	<a href="#nasilgiderim" data-role="button" data-theme="b" data-transition="slide">Nasıl giderim? </a>
+	<a href="#neredeyim" data-role="button" data-theme="b" data-transition="slide">Neredeyim?</a>
+	
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d" data-position="fixed">
+	
+		<div data-role="navbar">
+						<a href="#hatlar" data-role="button">Tüm Hatlar</a>
+						<a href="#onemliYerler" data-role="button">Duyurular</a>
+					</div><!--navigation bar -->
+					
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="nasilgiderim">
+
+	<div data-role="header" data-theme="d" data-position="fixed">
+		<!--<div class=custom_header">-->
+			<a href="#home">Ana Sayfa</a>
+			<h1>Hangi otobüs hattı ile gitmeliyim?</h1>
+		<!--</div>-->
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	
+
+	
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d" data-position="fixed">
+		<h1>Ankara EGO</h1>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="hatarama">
+
+	<div data-role="header" data-theme="d" data-position="fixed">
+		<!--<div class=custom_header">-->
+			<a href="#home">Ana Sayfa</a>
+			<h1>Ankara EGO Otobüsleri Hat Arama</h1>
+		<!--</div>-->
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	
+
+	
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d" data-position="fixed">
+		<h1>Ankara EGO</h1>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="adresarama">
+
+	<div data-role="header" data-theme="d" data-position="fixed">
+		<!--<div class=custom_header">-->
+		    <a href="#home"> Ana Sayfa </a>
+			<h1>Ankara EGO Otobüs Hatlarını Adrese Göre Arama</h1>
+		<!--</div>-->
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	
+	
+	
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d" data-position="fixed">
+		<h1>Ankara EGO</h1>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="neredeyim">
+
+	<div data-role="header" data-theme="d" data-position="fixed">
+		<!--<div class=custom_header">-->
+		    <a href="#home"> Ana Sayfa </a>
+			<h1>Ankara EGO Otobüs Hatlarını Yer Bilgisi ile Arama</h1>
+		<!--</div>-->
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	
+	
+	
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d" data-position="fixed">
+		<h1>Ankara EGO</h1>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+<div data-role="page" data-add-back-btn="true" id="onemliyerler">
+
+	<div data-role="header" data-theme="d" data-position="fixed">
+		<!--<div class=custom_header">-->
+		    <a href="#home"> Ana Sayfa </a>
+			<h1>Ankara EGO Otobüs Hatları ile Önemli Yerlere Nasıl giderim?</h1>
+		<!--</div>-->
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	
+		<ul data-role="listview" data-split-theme="e" data-add-back-btn="true" id="onemliyerlerul"> 
+			<li>
+				<img src='images/metro.jpg'/>
+				<h1> <a href="" data-transition="slide"> Merkezi Yer </a> </h1>
+				<p> Metro duraklarına nasıl ulaşabilirim. </p>
+					<ul>
+						<li><a href=""> Aşti(Otogar)</a></li>
+						<li><a href=""> TCDD</a></li>
+						<li><a href=""> Metro</a></li>
+					</ul>
+			</li>
+			
+			<li>
+				<img src='images/ankaray.jpg'/>
+				<h1> <a href="" data-transition="slide" > Ulaşım </a> </h1>
+				<p> Ankaray duraklarına nasıl ulaşabilirim. </p>
+				<!--<a href=""> deneme </a>-->
+					<ul>
+						<li><a href=""> Kızılay </a></li>
+						<li><a href=""> Sıhhiye </a></li>
+						<li><a href=""> Ulus </a></li>
+					</ul>
+			</li>
+
+		</ul>
+	
+	
+	
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d" data-position="fixed">
+		<h1>Ankara EGO</h1>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+	</body>
+	
+</html>

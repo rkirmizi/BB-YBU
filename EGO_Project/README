@@ -1,0 +1,8 @@
+Yapilacaklar
+
+* hat ara
+* adres ara
+* onemli yerler
+* Su anda neredeyim?
+	- bizim geolocation bilgimizi alacak
+	- google maps ya da farkli bir harita sisteminden koordinat bilgimize göre bize semt bilgisini verecek.
