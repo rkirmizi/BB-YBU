@@ -1,8 +1,44 @@
 Yapilacaklar
 
-* hat ara
-* adres ara
-* onemli yerler
-* Su anda neredeyim?
-	- bizim geolocation bilgimizi alacak
-	- google maps ya da farkli bir harita sisteminden koordinat bilgimize göre bize semt bilgisini verecek.
+Uygulamada Hangi Bölümler Var?
+
+Uygulamada EGO Otobüs Hatlari ile ilgili ihtiyaç duyabileceginiz tüm bilgiler bulunmaktadir.
+
+· Hat Ara
+
+o Hat Bilgileri
+o Hareket Saatleri
+o Durak Konumlari
+o Harita Üzerinde Durak Konumlari ve Güzergahi
+
+· Adres Ara
+
+o Ilçe, Mahalle, Cadde, Sokak ve Yer Adina Göre Arama
+o Belirlenen Adrese Yakin Olan Duraklar ve Hat Bilgileri
+o Harita Üzerinde Adres Konumu
+
+· Önemli Yerler
+
+o Kategorilere Göre Önemli Yerler
+o Belirlenen Önemli Yere Yakin Olan Duraklar ve Hat Bilgileri
+o Harita Üzerinde Önemli Yerin Konumu
+
+· Nasil Giderim?
+
+o Nereden? / Nereye? Adres Bilgisine Göre Güzergah Olusturma
+o Adrese Göre Arama Yapma
+o Direk ve Aktarmali Hatlara Göre Güzergah Olusturma
+o Harita Üzerinde Güzergahi Gösterme
+
+· Neredeyim?
+
+o GPS Konum Belirleme Ile Konumuzun Tespiti
+o Bulundugunuz Yerden / Nereye ? Adres Bilgisine Göre Güzergah Olusturma
+o Adrese Göre Arama Yapma
+o Direk ve Aktarmali Hatlara Göre Güzergah Olusturma
+o Harita Üzerinde Güzergahi Gösterme
+
+· Duyurular
+
+o Yayinlanan Duyurularin Listesi
+o Duyurunun Detay Bilgilerini Görüntüleme
