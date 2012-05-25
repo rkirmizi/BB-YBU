@@ -9,7 +9,7 @@
 	$(document).bind("mobileinit", function() {
       $.mobile.page.prototype.options.addBackBtn = true;
 	  $.mobile.page.prototype.options.backBtnText="Geri";
-		});    
+	  });    
 	</script>
 	
 	<script src="jquery.mobile-1.1.0/jquery.mobile-1.1.0.min.js"></script>
@@ -106,7 +106,14 @@
 	</div><!-- /header -->
 
 	<div data-role="content">	
-	
+	<div data-role="fieldcontain">
+		<input type="checkbox" name="durak" id="durak" data-mini="true" />
+	   <label for="durak">Aramada Durak Konumlarınıda Ara</label>
+	</div>
+	<ul data-role="listview" data-filter="true" data-inset="true" data-filter-placeholder="Aramak istediğiniz hattın adını ya da konumunu giriniz.">
+				<li><a href="index.html">Burası jquery ile parse edilen xml ile dolacak</a></li>
+			</ul>
+
 
 	
 	</div><!-- /content -->
