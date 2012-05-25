@@ -20,6 +20,16 @@
 			static void exit();
 		});
 	</script>
+	<script>
+      function highlight(e) {
+	  //@gokce buraya hosuna giden güzel bir renk kodu koymalı
+         e.setAttribute("style", "background-color: red; outline: cyan solid thick;");
+      }
+    
+      function unhighlight(e) {
+         e.setAttribute("style", "");
+      }
+   </script>
 	
 	</head>
 	
@@ -39,8 +49,11 @@
 	
 	<p></p>
 	
-
-	<a href="#hatarama" data-role="button" data-theme="b" data-transition="slide">Hat Arama</a>
+	<!-- 
+	ilk bağlantıda (Hat Arama) "highlight'ı nasıl kullanabiliriz" in örneği var bunları hepsine yapmalı
+	çünkü fare imleci olmadan hangi öğede olduğumuzu net olarak bilebilmemiz ve orayı öne çıkarmamız gerekiyor.
+	-->
+	<a href="#hatarama" data-role="button" data-theme="b" data-transition="slide" onmouseover="highlight(this);" onmouseout="unhighlight(this);">Hat Arama</a>
 	<a href="#adresarama" data-role="button" data-theme="b" data-transition="slide">Adres ile Arama</a>
 	<!-- <a href="#yerilearama" data-role="button" data-theme="b">Yer Adı ile Arama</a>-->
 	<a href="#onemliyerler" data-role="button" data-theme="b" data-transition="slide">Önemli Yerler</a>
