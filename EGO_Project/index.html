@@ -23,7 +23,7 @@
 	<script>
       function highlight(e) {
 	  //@gokce buraya hosuna giden güzel bir renk kodu koymalı
-         e.setAttribute("style", "background-color: red; outline: cyan solid thick;");
+         e.setAttribute("style", "background-color: lightseagreen ; outline: lightseagreen solid thin;");
       }
     
       function unhighlight(e) {
@@ -53,14 +53,13 @@
 	ilk bağlantıda (Hat Arama) "highlight'ı nasıl kullanabiliriz" in örneği var bunları hepsine yapmalı
 	çünkü fare imleci olmadan hangi öğede olduğumuzu net olarak bilebilmemiz ve orayı öne çıkarmamız gerekiyor.
 	-->
-	<a href="#hatarama" data-role="button" data-theme="b" data-transition="slide" onmouseover="highlight(this);" onmouseout="unhighlight(this);">Hat Arama</a>
-	<a href="#adresarama" data-role="button" data-theme="b" data-transition="slide">Adres ile Arama</a>
-	<!-- <a href="#yerilearama" data-role="button" data-theme="b">Yer Adı ile Arama</a>-->
-	<a href="#onemliyerler" data-role="button" data-theme="b" data-transition="slide">Önemli Yerler</a>
-	<a href="#nasilgiderim" data-role="button" data-theme="b" data-transition="slide">Nasıl giderim? </a>
-	<a href="#neredeyim" data-role="button" data-theme="b" data-transition="slide">Neredeyim?</a>
-	<a href="#duyurular" data-role="button" data-theme="b" data-transition="slide">Duyurular</a>
-	<a href="#" data-role="button" data-theme="b" id="cikis">Çıkış</a>
+	<a href="#hatarama" data-role="button" x-blackberry-focusable="true" data-theme="b" data-transition="slide" onmouseover="highlight(this);" onmouseout="unhighlight(this);">Hat Arama</a>
+	<a href="#adresarama" data-role="button" data-theme="b" data-transition="slide" onmouseover="highlight(this);" onmouseout="unhighlight(this);">Adres ile Arama</a>
+	<a href="#onemliyerler" data-role="button" data-theme="b" data-transition="slide" onmouseover="highlight(this);" onmouseout="unhighlight(this);">Önemli Yerler</a>
+	<a href="#nasilgiderim" data-role="button" data-theme="b" data-transition="slide" onmouseover="highlight(this);" onmouseout="unhighlight(this);">Nasıl giderim? </a>
+	<a href="#neredeyim" data-role="button" data-theme="b" data-transition="slide" onmouseover="highlight(this);" onmouseout="unhighlight(this);">Neredeyim?</a>
+	<a href="#duyurular" data-role="button" data-theme="b" data-transition="slide" onmouseover="highlight(this);" onmouseout="unhighlight(this);">Duyurular</a>
+	<a href="#" data-role="button" data-theme="b" id="cikis" onmouseover="highlight(this);" onmouseout="unhighlight(this);">Çıkış</a>
 	
 	</div><!-- /content -->
 	
@@ -75,26 +74,6 @@
 
 </div><!-- /page -->
 
-<div data-role="page" id="nasilgiderim">
-
-	<div data-role="header" data-theme="d" data-position="fixed">
-		<!--<div class=custom_header">-->
-			<a href="#home">Ana Sayfa</a>
-			<h1>Hangi otobüs hattı ile gitmeliyim?</h1>
-		<!--</div>-->
-	</div><!-- /header -->
-
-	<div data-role="content">	
-	
-
-	
-	</div><!-- /content -->
-	
-	<div data-role="footer" data-theme="d" data-position="fixed">
-		<h1>Ankara EGO</h1>
-	</div><!-- /footer -->
-
-</div><!-- /page -->
 
 <div data-role="page" id="hatarama">
 
@@ -106,6 +85,8 @@
 	</div><!-- /header -->
 
 	<div data-role="content">	
+	
+
 	<div data-role="fieldcontain">
 		<input type="checkbox" name="durak" id="durak" data-mini="true" />
 	   <label for="durak">Aramada Durak Konumlarınıda Ara</label>
@@ -135,7 +116,93 @@
 
 	<div data-role="content">	
 	
+	<ul data-role="listview" data-filter="true" data-inset="true" data-filter-placeholder="Aramak istediğiniz adresi giriniz.">
+				<li><a href="index.html">Burası jquery ile parse edilen xml ile dolacak</a></li>
+			</ul>
 	
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d" data-position="fixed">
+		<h1>Ankara EGO</h1>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+<div data-role="page" data-add-back-btn="true" id="onemliyerler">
+
+	<div data-role="header" data-theme="d" data-position="fixed">
+		<!--<div class=custom_header">-->
+		    <a href="#home"> Ana Sayfa </a>
+			<h1>Ankara EGO Otobüs Hatları ile Önemli Yerlere Nasıl giderim?</h1>
+		<!--</div>-->
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	
+		<ul data-role="listview" data-split-theme="e" data-add-back-btn="true" id="onemliyerlerul"> 
+		
+		   <li>
+				<a href="" data-transition="slide" onmouseover="highlight(this);" onmouseout="unhighlight(this);"> Tümü </a>
+				<!--<p> Ankara'daki merkeze yerlere ve ulaşım ile ilgili hatlara ait bilgiler. </p>-->
+					<ul>
+						<li><a href="" onmouseover="highlight(this);" onmouseout="unhighlight(this);"> Kızılay </a></li>
+						<li><a href="" onmouseover="highlight(this);" onmouseout="unhighlight(this);"> Sıhhiye </a></li>
+						<li><a href="" onmouseover="highlight(this);" onmouseout="unhighlight(this);"> Ulus </a></li>
+						<li><a href="" onmouseover="highlight(this);" onmouseout="unhighlight(this);"> Aşti(Otogar)</a></li>
+						<li><a href="" onmouseover="highlight(this);" onmouseout="unhighlight(this);"> TCDD</a></li>
+						<li><a href="" onmouseover="highlight(this);" onmouseout="unhighlight(this);"> Metro</a></li>
+					</ul>
+			</li>
+			
+			<li>
+				<a href="" data-transition="slide" onmouseover="highlight(this);" onmouseout="unhighlight(this);"> Merkezi Yer </a>
+					<ul>
+						<li><a href="" onmouseover="highlight(this);" onmouseout="unhighlight(this);"> Kızılay </a></li>
+						<li><a href="" onmouseover="highlight(this);" onmouseout="unhighlight(this);"> Sıhhiye </a></li>
+						<li><a href="" onmouseover="highlight(this);" onmouseout="unhighlight(this);"> Ulus </a></li>
+					</ul>
+			</li>
+			
+			<li>
+				<a href="" data-transition="slide" onmouseover="highlight(this);" onmouseout="unhighlight(this);"> Ulaşım </a>
+				<!--<a href=""> deneme </a>-->
+					<ul>
+						<li><a href="" onmouseover="highlight(this);" onmouseout="unhighlight(this);"> Aşti(Otogar)</a></li>
+						<li><a href="" onmouseover="highlight(this);" onmouseout="unhighlight(this);"> TCDD</a></li>
+						<li><a href="" onmouseover="highlight(this);" onmouseout="unhighlight(this);"> Metro</a></li>
+						<li><a href="" onmouseover="highlight(this);" onmouseout="unhighlight(this);"> Ankaray</a></li>
+					</ul>
+			</li>
+
+		</ul>
+	
+	
+	
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-theme="d" data-position="fixed">
+		<h1>Ankara EGO</h1>
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+<div data-role="page" id="nasilgiderim">
+
+	<div data-role="header" data-theme="d" data-position="fixed">
+		<!--<div class=custom_header">-->
+			<a href="#home">Ana Sayfa</a>
+			<h1>Hangi otobüs hattı ile gitmeliyim?</h1>
+		<!--</div>-->
+	</div><!-- /header -->
+
+	<div data-role="content">	
+	
+		
+		<a href="#nereden" data-role="button" id="nereden" data-theme="a" data-transition="slide" onmouseover="highlight(this);" onmouseout="unhighlight(this);">Nereden?</a>
+		<input type="text" name="nereden" id="nereden" value="--Adres Seçin--" style="text-align:center" readonly="readonly" /><br>
+		<a href="#nereye" data-role="button" id="nereye" data-theme="a" data-transition="slide" onmouseover="highlight(this);" onmouseout="unhighlight(this);">Nereye?</a>
+		<input type="text" name="nereden" id="nereden" value="--Adres Seçin--" style="text-align:center" readonly="readonly" />
+		<a href="#nasilgiderimgoster" data-role="button" data-theme="a" data-transition="slide" onmouseover="highlight(this);" onmouseout="unhighlight(this);">Nasıl Giderim? Göster</a>
 	
 	</div><!-- /content -->
 	
@@ -166,52 +233,7 @@
 
 </div><!-- /page -->
 
-<div data-role="page" data-add-back-btn="true" id="onemliyerler">
 
-	<div data-role="header" data-theme="d" data-position="fixed">
-		<!--<div class=custom_header">-->
-		    <a href="#home"> Ana Sayfa </a>
-			<h1>Ankara EGO Otobüs Hatları ile Önemli Yerlere Nasıl giderim?</h1>
-		<!--</div>-->
-	</div><!-- /header -->
-
-	<div data-role="content">	
-	
-		<ul data-role="listview" data-split-theme="e" data-add-back-btn="true" id="onemliyerlerul"> 
-			<li>
-				<img src='images/metro.jpg'/>
-				<h1> <a href="" data-transition="slide"> Merkezi Yer </a> </h1>
-				<p> Metro duraklarına nasıl ulaşabilirim. </p>
-					<ul>
-						<li><a href=""> Aşti(Otogar)</a></li>
-						<li><a href=""> TCDD</a></li>
-						<li><a href=""> Metro</a></li>
-					</ul>
-			</li>
-			
-			<li>
-				<img src='images/ankaray.jpg'/>
-				<h1> <a href="" data-transition="slide" > Ulaşım </a> </h1>
-				<p> Ankaray duraklarına nasıl ulaşabilirim. </p>
-				<!--<a href=""> deneme </a>-->
-					<ul>
-						<li><a href=""> Kızılay </a></li>
-						<li><a href=""> Sıhhiye </a></li>
-						<li><a href=""> Ulus </a></li>
-					</ul>
-			</li>
-
-		</ul>
-	
-	
-	
-	</div><!-- /content -->
-	
-	<div data-role="footer" data-theme="d" data-position="fixed">
-		<h1>Ankara EGO</h1>
-	</div><!-- /footer -->
-
-</div><!-- /page -->
 <div data-role="page" id="duyurular">
 
 	<div data-role="header" data-theme="d" data-position="fixed">
