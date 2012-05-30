@@ -10,7 +10,10 @@
    email="ybu-blackberry@googlegroups.com">YBU TEAM</author> 
  <icon src="images/icon.png"/>
  <content src="index.html"/> 
+ <rim:navigation mode="focus" />
+ <feature id="blackberry.ui.dialog" />
  <access subdomains="true" uri="http://code.jquery.com">
     <feature id="blackberry.app.event" required="true" version="1.0.0"/>
+	<feature id="blackberry.invoke" required="true" version="1.0.0"/>
  </access>
 </widget>
