@@ -14,7 +14,7 @@
 "enabledebug" : "Enable Debug",
 "cachetimeseconds" : "Cache time (seconds)",
 "browsephotoalbums" : "Browse photo albums",
-"takeapictureorvideo" : "Take a picture or video",
+"takeapictureorvideo" : "Take a picture or videos",
 "recordaudio" : "Record audio",
 "mycourses" : "My Courses",
 "users" : "Users",
@@ -41,5 +41,9 @@
 "message" : "Message",
 "Note" : "Note",
 "addasite" : "Add a site",
+"about" : "About",
+"aboutpage" : "Edited By Emrullah SONUC and Ferhat Atasoy",
+"aboutpage2" : "Karabuk University Computer Engineering 2012",
+"aboutpage3" : "http://muh.karabuk.edu.tr/bilgisayar",
 "" : "Missing String"
 }
