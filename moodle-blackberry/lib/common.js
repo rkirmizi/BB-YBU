@@ -1,4 +1,4 @@
-﻿// Basic setup for every page
+// Basic setup for every page
 // Despiste this file is included in all the pages, this is going to be included only one time in a mobile device
 // This is because jqueryMobile load via AJAX the body of the pages and not the head elements
 
