@@ -19,24 +19,27 @@
 	
 	<script type="text/javascript">
 	function showLocation(position) {
-		try{
+		try
+		{
 			var lat_ = position.coords.latitude;
 			var long_ = position.coords.longitude;
 			var key_ = "1430000204000146008300080807040X20351090050050230002069";
 			//gurl="http://www.locationbox.com.tr/locationbox/services?Key="+key_+"&Cmd=Geocode&Typ=XML&Latitude="+lat_+"&Longitude="+long_;
 			//document.getElementById("demo").innerHTML=gurl;
-			return lat_,long_,key_;		}
-		catch(e){
+			return lat_,long_,key_;
+		}
+		catch (e) {
 			errorMessage("exception (displayContentForLocation): " + e);}
 		}//show location
 	function errorHandler(err) {
-			if(err.code == 1) {
-				alert("Error: Access is denied!");}
-				else if( err.code == 2){
-				alert("Error: Position is unavailable!");}
+		if(err.code == 1) {
+			alert("Error: Access is denied!");}
+		else if( err.code == 2){
+			alert("Error: Position is unavailable!");}
 		}//error handler
 	function getLocation(){
-		try{
+		try 
+		{
 			if(navigator.geolocation){
 				// timeout at 60000 milliseconds (60 seconds)
 				var options = {timeout:60000};
@@ -44,28 +47,61 @@
 			else{
 				alert("Sorry, browser does not support geolocation!");}
 		}
-		catch(e){
-			alert("exception (displayContentForLocation): " + e);}
+		catch (e) {
+			alert("exception (displayContentForLocation): " + e);
+		}
 		}//get location
+
+		function measureDistance(cur_lat, cur_lon, tar_lat, tar_lon)
+		{
+			var distance = 0;
+		try
+		{
+			var earth_radius = 6378137; // earth radius
+			var dist_lat = (target_lat - current_lat) * Math.PI / 180;
+			var dist_lon = (target_lon - current_lon) * Math.PI / 180;
+	
+			var a = Math.pow(Math.sin(distance_lat / 2), 2) + (Math.cos(current_lat * Math.PI / 180) * Math.cos(target_lat * Math.PI / 180) * Math.pow(Math.sin(distance_lon / 2), 2));
+			var b = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+			distance = Math.floor(earth_radius * b);
+			
+			return distance;
+		} 
+		catch (e) {
+			alert("exception (measureDistance): " + e); }
+		}// measure distance	
 	</script>
 	
 	<script language="JavaScript">
-		var mapper  = new IMapper();
+	var mapper  = new IMapper();
 
-		function startup(){
-			try{
-				mapper.initMap(39.92077, 32.85411, 10);
-				//mapper.addNavigationPanel();}
-			catch(e){
-				alert("exception (displayMap): " + e);}
+	function startup(){
+		try
+		{
+			mapper.initMap(39.92077, 32.85411, 10);
+			//mapper.addNavigationPanel();
+			return;
+		}
+		catch (e) {
+			alert("exception (displayMap): " + e);
+		}
+	}
 		// startup()
 	</script>
-	
+<!--	
 	<script>
-		$(#cikis).click(function() {
+		$('#cikis').click(function() {
 			static void exit();
 		});
 	</script>
+-->
+
+	<script>
+		$('#neredeyim').click(function() {
+			startup();
+		});
+	</script>
+
 	<script>
       function highlight(e) {
 	  //@gokce buraya hosuna giden güzel bir renk kodu koymalı
@@ -109,9 +145,9 @@
 	<a href="#adresarama" data-role="button" data-theme="b" data-transition="slide" onmouseover="highlight(this);" onmouseout="unhighlight(this);">Adres ile Arama</a>
 	<a href="#onemliyerler" data-role="button" data-theme="b" data-transition="slide" onmouseover="highlight(this);" onmouseout="unhighlight(this);">Önemli Yerler</a>
 	<a href="#nasilgiderim" data-role="button" data-theme="b" data-transition="slide" onmouseover="highlight(this);" onmouseout="unhighlight(this);">Nasıl giderim? </a>
-	<a href="#neredeyim" data-role="button" data-theme="b" data-transition="slide" onmouseover="highlight(this);" onmouseout="unhighlight(this);">Neredeyim?</a>
+	<a href="#neredeyim" data-role="button" data-theme="b" id="neredeyim" data-transition="slide" onmouseover="highlight(this);" onmouseout="unhighlight(this);">Neredeyim?</a>
 	<a href="#duyurular" data-role="button" data-theme="b" data-transition="slide" onmouseover="highlight(this);" onmouseout="unhighlight(this);">Duyurular</a>
-	<a href="#" data-role="button" data-theme="b" id="cikis" onmouseover="highlight(this);" onmouseout="unhighlight(this);">Çıkış</a>
+	<a href="#cikis" data-role="button" data-theme="b" id="cikis" onmouseover="highlight(this);" onmouseout="unhighlight(this);">Çıkış</a> 
 	
 	</div><!-- /content -->
 	
@@ -274,6 +310,7 @@
 	</div><!-- /header -->
 
 	<div data-role="content">
+	<!-- Neredeyim linkine tıklandığında harita çıkması lazım. -->
 		<div id="map" style="border: 1px solid black; width:25%; height:25%; z-index: 0;"></div>
 	</div><!-- /content -->
 	
