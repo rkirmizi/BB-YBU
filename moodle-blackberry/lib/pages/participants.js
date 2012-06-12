@@ -11,7 +11,8 @@
                 $("#lmycourses").append('<li><a id="course'+course.id+'" data-courseid="'+course.id+'">'+course.fullname+'<p>'+course.shortname+'</p></a></li>');
                 $("#course"+course.id).click(function(){                        
                     localStorage.setItem("current_course",$(this).attr('data-courseid'))
-                    $.mobile.changePage("users.html");
+                    $.mobile.changePage("users.html"); 
+					
                 });
             });            
             $('#lmycourses').listview('refresh');        

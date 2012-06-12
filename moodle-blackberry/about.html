@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <title>umm: Unofficial Moodle Mobile App</title> 
     <link rel="stylesheet" href="lib/jquery.mobile.1.0rc2.css" />
-    <link rel="stylesheet" href="lib/umoodle.css" />
+    <link rel="stylesheet" href="lib/umoodle.css" />    
     <script type="text/javascript" charset="utf-8" src="lib/phonegap.1.2.0.js"></script>
     <script src="lib/jquery.js"></script>
     <script src="lib/xml2json.js"></script>
@@ -17,23 +17,22 @@
 
 <body> 
 
-<div data-role="page" id="page-users">
+<div data-role="page" id="page-about">
 
     <div data-role="header">
-        <a href="participants.html" id="bback" data-icon="arrow-l"><span data-lang="back">Back</span></a>
-        <h1><span data-lang="users">Users</span></h1>
-		<a href="mysite.html" id="bback" data-icon="home"><span data-lang="homepage">Home Page</span></a>
-        
-    </div><!-- /header -->
+        <a href="mysite.html" data-icon="arrow-l"><span data-lang="back">Back</span></a>
+        <h1><span data-lang="about">About</span></h1>
+    </div>
 
-    <div data-role="content">            
-        <ul data-role="listview" id="lusers">            
-        </ul>
-    </div><!-- /content -->
+    <div data-role="content">
+       <p><span data-lang="aboutpage">About Page</span></p>
+       <p><span data-lang="aboutpage2">About Page 2</span></p>
+       <p><span data-lang="aboutpage3">About Page 3</span></p>    	   
+    </div>
+
+    <script type="text/javascript" src="lib/pages/about.js"></script>
     
-    <script type="text/javascript" src="lib/pages/users.js"></script>
-    
-</div><!-- /page -->
+</div>
 
 </body>
 </html>

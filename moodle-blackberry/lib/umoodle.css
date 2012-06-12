@@ -34,6 +34,21 @@
     text-align: right;
     margin-right: 0px;
 }
+#page-mysite .ui-block-f1{
+    text-align: left;
+	float:left;
+    margin-right: 43%;
+}
+#page-mysite .ui-block-f2{
+    text-align: center;
+	float:left;
+    margin-right: 0px;
+}
+#page-mysite .ui-block-f3{
+    text-align: right;
+	float:clear;
+    margin-right: 0px;
+}
 
 #page-mysite h1{
     color: orange;

@@ -43,7 +43,7 @@
                         </span>
                     </a>
                 </div>
-		<div class="ui-block-a">
+				<div class="ui-block-a">
                     <a href="contents.html" style="text-decoration: none">
                         <span class="ui-btn ui-btn-icon-top ui-btn-corner-all ui-shadow ui-btn-up-c">
                             <br/>                        
@@ -73,6 +73,19 @@
                         </span>
                     </a>
                 </div>
+				
+				<div class="ui-block-b">
+                    <a href="about.html" style="text-decoration: none">
+                        <span class="ui-btn ui-btn-icon-top ui-btn-corner-all ui-shadow ui-btn-up-c">
+                            <br/>                        
+                            <img src="custom/pix/about.png"><br/>
+                            <span data-lang="about">About</span>                                                                        
+                            <br/>
+                        </span>
+                    </a>
+                </div>
+				
+				
                 
             </div>
         </div>  
@@ -81,12 +94,50 @@
     
     <div data-role="footer" data-position="fixed" data-theme="o">        
         <fieldset class="ui-grid-a">
-            <div class="ui-block-a"><a href="setup.html" data-role="button" data-icon="refresh" data-iconpos="notext" data-theme="e"></a></div>
-            <div class="ui-block-b"><a href="mysites.html" data-role="button" data-icon="gear" data-iconpos="notext" data-theme="e"></a></div>       
+            <div class="ui-block-f1"><a href="setup.html" data-role="button" data-icon="refresh" data-iconpos="notext" data-theme="e"></a></div>
+            <div class="ui-block-f2"><a href="#" onclick="swipemenu.simulateSwipeEvent()" id="brecord" data-role="button"><span data-lang="topmenu">Top Menu</span></a></div>      
+            <div class="ui-block-f3"><a href="mysites.html" data-role="button" data-icon="gear" data-iconpos="notext" data-theme="e"></a></div>  
+
+					
         </fieldset>
     </div>    
     
     <script type="text/javascript" src="lib/pages/mysite.js"></script>
+	
+	
+	<script>
+		//Define call-backs for menu buttons
+		function doButton() {
+			alert("Button clicked");
+		}
+		
+		function goKBU() {
+			location.href = "http://www.karabuk.edu.tr";
+		}
+		
+	</script>
+    <script type="text/javascript" src="lib/swipemenu.js"></script>
+	<script>
+		window.addEventListener("load", function() {
+			if(swipemenu) {
+				//Optional: override default menu height (default = 70px)
+				swipemenu.setMenuHeight(100);
+				
+				//Required: Add menu buttons (can be text, images, or a mix of both):
+				//swipemenu.addButton("Label", doButton, false, "images/icon_rules.png");
+				swipemenu.addButton("KBÜ", goKBU, false, "http://www.karabuk.edu.tr/belgeler/logo_pack/AmblemStyledSmall_noBg.png");
+				swipemenu.addButton("URL", doButton, false, "http://icons.iconarchive.com/icons/martin-berube/animal/48/monkey-icon.png");
+				swipemenu.addButton("Close", swipemenu.close, true, "custom/pix/close.png");
+				/*
+				icon_options.png, icon_reset.png and icon_rules.png (Public Domain) courtesy of Rory Craig-Barnes
+				https://github.com/glasspear/WebWorks-CodeSamples
+				
+				monkey-icon.png (Freeware, allowed commercial usage) courtesy of Martin Berube:
+				http://www.iconarchive.com/show/animal-icons-by-martin-berube/monkey-icon.html
+				*/
+			}
+		}, false);
+	</script>
     
 </div><!-- /page -->
 
