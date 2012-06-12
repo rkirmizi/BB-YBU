@@ -4,7 +4,6 @@
 	<title>Yildirim Beyazit University Ankara EGO Otobüs Hatları Bilgilendirme Sistemi</title> 
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<script src="jquery-1.7.min.js"></script>
-	<script language="Javascript" src="http://www.locationbox.com.tr/locationbox/services?Key=1430000204000146008300080807040X20351090050050230002069&Cmd=API&Typ=JS"></script>
 	<script>
 	$(document).bind("mobileinit", function() {
       $.mobile.page.prototype.options.addBackBtn = true;
@@ -14,29 +13,32 @@
 	
 	<script src="jquery.mobile-1.1.0/jquery.mobile-1.1.0.min.js"></script>
 	<link rel="stylesheet" href="jquery.mobile-1.1.0/jquery.mobile-1.1.0.min.css" />
-	
+<!--
+	key = "1430000204000146008300080807040X20351090050050230002069";
 	<script language="Javascript" src="http://www.locationbox.com.tr/locationbox/services?Key=1430000204000146008300080807040X20351090050050230002069&Cmd=API&Typ=JS"></script>
-	
+-->	
 	<script type="text/javascript">
 	function showLocation(position) {
 		try
 		{
 			var lat_ = position.coords.latitude;
 			var long_ = position.coords.longitude;
-			var key_ = "1430000204000146008300080807040X20351090050050230002069";
-			//gurl="http://www.locationbox.com.tr/locationbox/services?Key="+key_+"&Cmd=Geocode&Typ=XML&Latitude="+lat_+"&Longitude="+long_;
-			//document.getElementById("demo").innerHTML=gurl;
-			return lat_,long_,key_;
+			
+			startup(lat_,long_);
+			
+			//return lat_,long_;
 		}
 		catch (e) {
 			errorMessage("exception (displayContentForLocation): " + e);}
 		}//show location
+		
 	function errorHandler(err) {
 		if(err.code == 1) {
 			alert("Error: Access is denied!");}
 		else if( err.code == 2){
 			alert("Error: Position is unavailable!");}
 		}//error handler
+		
 	function getLocation(){
 		try 
 		{
@@ -48,15 +50,13 @@
 				alert("Sorry, browser does not support geolocation!");}
 		}
 		catch (e) {
-			alert("exception (displayContentForLocation): " + e);
-		}
+			alert("exception (displayContentForLocation): " + e); }
 		}//get location
 
-		function measureDistance(cur_lat, cur_lon, tar_lat, tar_lon)
-		{
-			var distance = 0;
+	function measureDistance(cur_lat, cur_lon, tar_lat, tar_lon){
 		try
 		{
+			var distance = 0;
 			var earth_radius = 6378137; // earth radius
 			var dist_lat = (target_lat - current_lat) * Math.PI / 180;
 			var dist_lon = (target_lon - current_lon) * Math.PI / 180;
@@ -69,16 +69,17 @@
 		} 
 		catch (e) {
 			alert("exception (measureDistance): " + e); }
-		}// measure distance	
+		}// measure distance
 	</script>
 	
 	<script language="JavaScript">
 	var mapper  = new IMapper();
 
-	function startup(){
+	function startup(lat_,long_){
 		try
 		{
-			mapper.initMap(39.92077, 32.85411, 10);
+			var zRate = 10; // zoom rate
+			mapper.initMap(lat_, long_, zRate);
 			//mapper.addNavigationPanel();
 			return;
 		}
@@ -88,6 +89,7 @@
 	}
 		// startup()
 	</script>
+
 <!--	
 	<script>
 		$('#cikis').click(function() {
@@ -95,12 +97,6 @@
 		});
 	</script>
 -->
-
-	<script>
-		$('#neredeyim').click(function() {
-			startup();
-		});
-	</script>
 
 	<script>
       function highlight(e) {
@@ -112,10 +108,16 @@
          e.setAttribute("style", "");
       }
    </script>
-	
+   
+	<script>
+		$('#neredeyim').click(function() {
+				getLocation();			
+		});
+	</script>
+   
 	<script>
 		$(document).ready(function(){
-			startup();//buradaki kodlar çalışacak
+			//buradaki kodlar çalışacak
 		});
 	</script>
 	
@@ -180,7 +182,7 @@
 	   <label for="durak">Aramada Durak Konumlarınıda Ara</label>
 	</div>
 	<ul data-role="listview" data-filter="true" data-inset="true" data-filter-placeholder="Aramak istediğiniz hattın adını ya da konumunu giriniz.">
-				<li><a href="index.html">Burası jquery ile parse edilen xml ile dolacak</a></li>
+		<li><a href="index.html">Burası jquery ile parse edilen xml ile dolacak</a></li>
 	</ul>
 
 
@@ -311,7 +313,7 @@
 
 	<div data-role="content">
 	<!-- Neredeyim linkine tıklandığında harita çıkması lazım. -->
-		<div id="map" style="border: 1px solid black; width:25%; height:25%; z-index: 0;"></div>
+		<div id="map" style="border: 1px solid black; width:100%; height:100%; z-index: 0;"></div>
 	</div><!-- /content -->
 	
 	<div data-role="footer" data-theme="d" data-position="fixed">
