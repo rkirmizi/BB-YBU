@@ -9,8 +9,12 @@
  <author rim:copyright="2012"
    email="ybu-blackberry@googlegroups.com">YBU TEAM</author> 
  <icon src="images/icon.png"/>
+ <icon src="images/hicon.png" rim:hover="true"/>
  <content src="index.html"/> 
  <rim:navigation mode="focus" />
+ <rim:permissions>
+	<rim:permit>read_geolocation</rim:permit>
+ </rim:permissions>
  <feature id="blackberry.ui.dialog" />
  <access subdomains="true" uri="http://code.jquery.com">
     <feature id="blackberry.app.event" required="true" version="1.0.0"/>
