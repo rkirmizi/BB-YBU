@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>
+        </title>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+        <link rel="stylesheet" href="my.css" />
+        <style>
+            /* App custom styles */
+        </style>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+        </script>
+        <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js">
+        </script>
+		<script src="md5.js"></script>
+    </head>
+    <body>
+        <!-- Home -->
+        <div data-role="page" id="page1">
+            <div data-theme="a" data-role="header">
+                <a data-role="button" data-transition="fade" href="#page1">
+                    Anasayfa
+                </a>
+                <a data-role="button" data-transition="fade" href="#page1">
+                    Geri
+                </a>
+                <h3>
+                    Senkron Ders Giriş Uygulaması
+                </h3>
+            </div>
+				<form action="http://3mrullah.com/bb/q2.php" method="post" data-ajax="false">
+            <div data-role="content" style="padding: 15px">
+                <div data-role="fieldcontain">
+			
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput1">
+                            Kullanıcı Adı
+                        </label>
+                        <input id="textinput1" name="textinput1" placeholder="Öğrenci Şifresi" value="" type="text" />
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput3">
+                            Şifre
+                        </label>
+                        <input id="textinput3" name="textinput3" placeholder="Bireysel Şifre" value="" type="password" />
+                    </fieldset>
+                </div>
+             
+                <div data-role="fieldcontain">
+                    <label for="selectmenu1">
+                        Choose:
+                    </label>
+                    <select name="selectmenu1" id="selectmenu1">
+                        <option value="option1">
+                            Karabük Üniversitesi
+                        </option>
+                        <option value="option2">
+                            Yıldırım Beyazıt Üniversitesi
+                        </option>
+                        
+                    </select>
+                </div>
+				
+                <div data-role="fieldcontain">
+				   <input type="submit" data-inline="true" data-theme="b" data-icon="arrow-r" data-iconpos="left" value="Giriş" data-mini="true" />
+				</div>
+				</form>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed">
+                <h3>
+                    KBU Team Her Hakkı Saklıdır.
+                </h3>
+            </div>
+        </div>
+        <script>
+            //App custom javascript
+        </script>
+		
+		<script>
+
+			$("form").submit(function() {
+				
+				
+				if ($("#textinput1").val() === "")
+				{
+				alert("Kullanıcı Adı Boş!");
+				return false;
+				}
+				
+				else if ($("#textinput3").val() === "")
+				{
+				alert("Şifre Alanı Boş!");
+				return false;
+				}
+				
+				else if ($("#selectmenu1").val() === "")
+				{
+				alert("Seçim Yapmadınız!");
+				return false;
+				}
+				
+				else
+				return true;
+				
+			});
+		</script>
+
+	
+		
+    </body>
+</html>
